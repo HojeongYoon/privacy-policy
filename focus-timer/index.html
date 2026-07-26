@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - FocusTimer</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+    h1 { font-size: 24px; border-bottom: 2px solid #333; padding-bottom: 10px; }
+    h2 { font-size: 18px; margin-top: 30px; }
+    .lang-switch { text-align: right; font-size: 14px; margin-bottom: 20px; }
+    .lang-switch a { color: #555; text-decoration: none; }
+    .lang-switch a.active { font-weight: bold; color: #000; }
+    #en { display: none; }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="#" id="btn-ko" class="active" onclick="showLang('ko');return false;">한국어</a> |
+    <a href="#" id="btn-en" onclick="showLang('en');return false;">English</a>
+  </div>
+
+  <div id="ko">
+    <h1>개인정보처리방침</h1>
+    <p>최종 업데이트: 2026년 7월 26일</p>
+
+    <p>본 개인정보처리방침은 FocusTimer(이하 "앱")를 이용하는 사용자의 개인정보 수집 및 이용에 관한 사항을 안내합니다.</p>
+
+    <h2>1. 수집하는 정보</h2>
+    <p>본 앱은 회원가입 없이 이용 가능하며, 이름·이메일 등 개인 식별 정보를 직접 수집하지 않습니다. 앱은 기본적으로 오프라인으로 작동하며, 집중 세션 기록·설정 등의 데이터는 사용자의 기기 내에만 저장됩니다.</p>
+
+    <h2>2. 광고 서비스 (Google AdMob)</h2>
+    <p>본 앱은 리워드 광고 제공을 위해 Google AdMob을 사용합니다. AdMob은 광고 게재 및 성과 측정을 위해 광고 식별자(Advertising ID) 등 기기 정보를 수집할 수 있습니다. 수집·처리 방식에 대한 자세한 내용은 Google의 개인정보처리방침(<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>)을 참고하세요.</p>
+
+    <h2>3. 기기 권한</h2>
+    <p>본 앱은 다음 권한을 사용합니다: 오디오 재생(집중 세션 중 백색소음 재생), 알림(세션 종료 알림). 이 권한들은 앱 기능 제공 목적으로만 사용되며, 수집된 데이터를 외부로 전송하지 않습니다.</p>
+
+    <h2>4. 제3자 제공</h2>
+    <p>본 앱은 AdMob을 통해 수집되는 정보 외에는 사용자 데이터를 제3자에게 제공하거나 판매하지 않습니다.</p>
+
+    <h2>5. 어린이 개인정보 보호</h2>
+    <p>본 앱은 만 13세 미만 아동으로부터 의도적으로 개인정보를 수집하지 않습니다.</p>
+
+    <h2>6. 개인정보처리방침 변경</h2>
+    <p>본 방침이 변경될 경우, 이 페이지를 통해 공지합니다.</p>
+
+    <h2>7. 문의</h2>
+    <p>개인정보 처리에 관한 문의사항은 아래로 연락해 주세요.<br>
+    이메일: <strong>euniceyoon@kakao.com</strong></p>
+  </div>
+
+  <div id="en">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: July 26, 2026</p>
+
+    <p>This Privacy Policy explains how FocusTimer (the "App") collects and uses information from its users.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>The App does not require account registration and does not directly collect personally identifiable information such as your name or email address. The App works offline by default; focus session history and settings are stored only on your device.</p>
+
+    <h2>2. Advertising (Google AdMob)</h2>
+    <p>The App uses Google AdMob to display rewarded ads. AdMob may collect device information, including the Advertising ID, to serve and measure ads. For details on how this data is collected and processed, please see Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+
+    <h2>3. Device Permissions</h2>
+    <p>The App requests the following permissions: audio playback (for ambient sounds during focus sessions) and notifications (for session-end alerts). These permissions are used solely to provide app functionality, and no data collected through them is transmitted externally.</p>
+
+    <h2>4. Third-Party Sharing</h2>
+    <p>Other than the information collected via AdMob, the App does not share or sell user data to third parties.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>The App does not knowingly collect personal information from children under 13.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>Any changes to this policy will be announced on this page.</p>
+
+    <h2>7. Contact</h2>
+    <p>For questions about how your data is handled, please contact us at:<br>
+    Email: <strong>euniceyoon@kakao.com</strong></p>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('ko').style.display = lang === 'ko' ? 'block' : 'none';
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
+</body>
+</html>
